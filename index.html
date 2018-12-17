@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <main>
+        <header class="loginArea">
+            <div id="userLogLine">
+                <input id="benutzerName" class="userLoginData" type="text" placeholder="Benutzername">
+                <input id="password" class="userLoginData" type="number" placeholder="Password">
+                <button id="enterBtn">Enter</button>
+            </div>
+            <div id="userListLine">
+                <form>
+                    <select>
+                        <option id="userList">User</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+
+        <div class="myRedditApp">
+            <h3>My Reddit App</h3>
+        </div>
+
+        <section class="topicArea">
+            <a href="">IT</a>
+            <a href="">Mathematik</a>
+            <a href="">Chemie</a>
+            <a href="">All</a>
+            <input type="text" id="newTopic" placeholder="New Topic">
+            <button id="newTopicBtn">Add Topic</button>
+        </section>
+
+        <section class="newPostArea">
+            <div id="topicLine">
+                <input type="text" name="" id="newTopicTitle" placeholder="Title">
+                <input type="text" name="" id="imgUrl" placeholder="IMG URL">
+                <form>
+                    <select>
+                        <option id="category">All</option>
+                        <option id="category">Mathematik</option>
+                        <option id="category">Chemie</option>
+                        <option id="category">IT</option>
+                    </select>
+                </form>
+            </div>
+            <div id="messageLine">
+                <input type="text" name="" id="message" placeholder="Write your Message">
+                <button id="createNewTopicBtn">New Post</button>
+            </div>
+        </section>
+
+        <section class="postArea">
+            <div id="postAreaContainer">
+                <div id="votesArea">
+                    <div class="myButton"><INPUT type="submit" id="voteUp" value=""></div>
+                    <div>1</div>
+                    <div class="myButton"><INPUT type="submit" id="voteDown" value=""></div>
+                </div>
+
+                <div id="post-container">
+                    <div id="topicInfo">
+                        <p id="topicName">Art</p>
+                        <p id="topicCreator">User</p>
+                    </div>
+                    <div>
+                        <h2 id="topicTitle">Heading</h2>
+                        <div id="topicContent">sdojasdfjadskjf dsfoiasdjfaüsdjf dsiodsajfaspüdofojü sdifdsaüjfdaosijf dsiajogadüjasdojp aoisdjfgasdjfdsoisdo</div>
+                    </div>
+                    <div>
+                        <input type="text" id="commentPost" placeholder="comment..">
+                        <button id="commentBtn">Comment</button>
+                    </div>
+                    <div id="commentHandling">
+                        <button id="hideComment">Hide Comment</button>
+                        <button id="showComment">Show Commet</button>
+                        <div id="commnetArea"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>

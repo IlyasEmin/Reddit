@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    width: 60%;
+}
+
+header {
+    display: flex;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color: #f3f3f3;
+}
+.loginArea {
+    height: 30px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+
+}
+
+.userLogLine{
+    width: 20%;
+}
+
+#userLogLine input{
+    border:1px solid black;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+#userLogLine button{
+    width: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+
+.topicArea{
+    margin: 20px 0px 20px;
+    display: flex;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.topicArea a{
+    padding: 6px;
+}
+
+.topicArea input{
+    width: 150px;
+    height: 30px;
+    margin: 0px 15px 0px 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.topicArea button{
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.newPostArea {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: rgb(178, 200, 248);
+}
+
+#topicLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#topicLine input{
+    width: 250px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+select{
+    height: 20px;
+    width: 60px;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#messageLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#messageLine input{
+    height: 50px;
+    width: 640px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#messageLine button{
+    height: 25px;
+    width: 100px;
+    margin-top: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: white;
+
+}
+
+.postArea {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+#postAreaContainer{
+    display: flex;
+    flex-flow: row;
+    padding:20px;
+}
+
+#votesArea{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+div.myButton input {
+    background:url(/images/positive.png) no-repeat;
+    cursor:pointer;
+    width: 64px;
+    height: 64px;
+    border: none;
+}
+
+#voteDown{
+    background:url(/images/negative.png) no-repeat;
+
+}
+
+#topicInfo p{
+    height: 3px;
+    font-size: 12px;    
+}
+
+#topicName{
+    color: blue;
+}
+
+#topicCreator{
+    color: red;
+}
+
+#commentPost{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 25px;
+    width: 85%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#commentBtn{
+    margin-left: 5px;
+    height: 25px;
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    
+}
+
+#commentHandling button{
+    height: 25px;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: white;
+}
